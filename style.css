@@ -1,0 +1,47 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#circle {
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    border-radius: 75px;
+    margin: 70px auto;
+}
+
+button {
+    width: 150px;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+
+.inner {
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 38px;
+    top: 40px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    position: relative;
+    left: 38px;
+    top: 40px;
+    border-bottom: 75px solid red;
+    border-right: 75px solid transparent;
+}
+
+/* we create a div with the class of .triangle and set the width and height of the element to 0, since we will be using 
+   the border property to create the triangle. We set the border-bottom property to create the base of the triangle, and set
+   the border-left and border-right properties to create the sloping edges. By setting the left and right borders to transparent, 
+   we create a diagonal edge that slopes towards the center of the element.*/
